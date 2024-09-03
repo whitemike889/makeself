@@ -45,17 +45,17 @@ jobs:
     - name: Install git submodules
       run: git submodule update --init --recursive
     - name: Download Linux-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-Linux
         path: linux
     - name: Download Mac-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-macOS
         path: mac
     - name: Download Windows-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-Windows
         path: windows
@@ -80,17 +80,17 @@ jobs:
     - name: Install git submodules
       run: git submodule update --init --recursive
     - name: Download Linux-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-Linux
         path: linux
     - name: Download Mac-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-macOS
         path: mac
     - name: Download Windows-built artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Makeself-Build-Windows
         path: windows
